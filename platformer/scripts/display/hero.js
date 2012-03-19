@@ -1,10 +1,10 @@
 re.c('hero')
-.requires('hero.png tsprite update force flicker')
+.requires('hero.png tsprite update force flicker body')
 .defines({
   
   speed:40 * re.sys.stepSize,
   
-  friX:0.75,
+  friX:1.0,
   friY:0.95,
   
   padX:6,
@@ -15,11 +15,10 @@ re.c('hero')
   jumpSpeed:480 * re.sys.stepSize,
   jump:false,
   ground:true,
-  // velX : 200 * re.sys.stepSize,
-    
+  velX : 100 * re.sys.stepSize,
   
   update:function(){
-    this.velX = 10*this.speed;
+    // this.velX = 10*this.speed;
     //jump
     if(this.ground && !this.jump && re.pressed('up')){
       this.forceJump();
@@ -76,4 +75,8 @@ re.c('hero')
     aftermath:this.jumpReset
   });
 
+})
+.dispose(function(){
+  this.off();
 });
+

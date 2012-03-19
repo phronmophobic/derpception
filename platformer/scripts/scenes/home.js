@@ -1,10 +1,14 @@
 re.scene('home')
 .enter(function(){
   
-  re.scene('play').enter('level1');
+    this.keyboard = re.e('keyboard')
+        .on('keydown:space', function(key, event){
+            re.scene('play').enter('level1');
+        });
   
 })
 .exit(function(){
+    this.keyboard.off();
   
   
 });
