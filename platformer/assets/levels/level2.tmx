@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="200" height="16" tilewidth="25" tileheight="25">
+ <tileset firstgid="1" name="tiles" tilewidth="25" tileheight="25">
+  <image source="../images/tiles.png" width="200" height="25"/>
+ </tileset>
+ <tileset firstgid="9" name="Hero" tilewidth="30" tileheight="61">
+  <image source="../images/derp_cut.png" width="30" height="61"/>
+ </tileset>
+ <tileset firstgid="10" name="items" tilewidth="25" tileheight="25">
+  <image source="../images/items.png" width="250" height="50"/>
+ </tileset>
+ <layer name="Base" width="200" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt2d0OgyAMhmF/Tnr/V2w8MCGmYKuIFd4naVjYWDjoNx1O033inAdGUsqHFN4HRiHJKKd58oGeXfW4ZMZ0LRlBz7Trg5YHbR3ZAPK0ey7gbyzXA8t3aOufXkfIFL5Wqwct/1WO15bccI+GCFr1oPd5CdnA1yL8Rmt7iLAvIEofns/HIuwJiNSLPDNBNJ5+rHHOBfyJ9cwpN2fJijd/XuQVb9l7aymUJKMYPk9RPdXe73PjWitX6/1T49QGScsFBg==
+  </data>
+ </layer>
+ <objectgroup color="#5e3ea4" name="Hero" width="200" height="16">
+  <object gid="9" x="78" y="139"/>
+ </objectgroup>
+ <objectgroup name="Items" width="200" height="16">
+  <object gid="24" x="300" y="343"/>
+  <object gid="24" x="266" y="343"/>
+  <object gid="24" x="207" y="334"/>
+  <object gid="24" x="156" y="328"/>
+  <object gid="24" x="156" y="298"/>
+  <object gid="14" x="4975" y="360"/>
+  <object gid="14" x="4977" y="344"/>
+  <object gid="14" x="4977" y="325"/>
+  <object gid="14" x="4977" y="305"/>
+  <object gid="14" x="4977" y="286"/>
+  <object gid="14" x="4977" y="264"/>
+  <object gid="14" x="4977" y="249"/>
+  <object gid="14" x="4977" y="216"/>
+  <object gid="14" x="4974" y="230"/>
+  <object gid="22" x="794" y="350"/>
+ </objectgroup>
+</map>
