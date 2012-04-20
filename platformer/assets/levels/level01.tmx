@@ -14,7 +14,7 @@
  </tileset>
  <layer name="Base" width="200" height="16">
   <data encoding="base64" compression="zlib">
-   eJztmdkOwiAQRXnjweijbdX//w4/zTaxkYwzwNQOS70nmbB0WApc6OLcsRmYcBDyU35hmrYxMGlatgY+iEv3TuOO8UmNBzc+sfbo9VrjwzHOdnJt9cmKHB1IYWxuf2mjJJ6kufVL8x2Tr72e68P1qzb/pI8Fbp/Mmf/YXqjxbVkfaxjb27ekJR+O1LlS+nyBPvbZH3PrbF0fNB6mNfsHRaozlccBfdiR2tOk/ZOGmvODK7swBlYCy/eP2HWpTmnsU2sR+gAW0POjV6APYAH0oQf6AL0BfQDwTY1vHNAH6InS33gt9QHNAQuO8nwFfeiR/oft8X/sKO/nJWlVH6X+CbTIOWFbgT70WOojNR/Xt20pK3EJrEdwfrTFMtarPnym3Wd75Pk+c+vcuSzsYHZzn3VH4wX78cyxafadFP4+vtY1dZSwFvu09/1pxt9ynmhfwrbCNt0UMYO2WXsBkLqhVg==
+   eJztmdkOgyAQRXnzoWkfq7b9/+/w0yqJJGQ6wwCVRb0nmbA4LAIXWjHm3IxMOAr5mp+fpm2MTJqWbcHgxaV3p3HD+GjjwY1PqD36vNX4cEyr3UxffSpFjA6kMDS3/7RRk4GkufVL8w2Tn/o81ofrV2uupA8Lt0/GzH9oL0zx7VkfLgzt7TlpyYdDO1dqny/Qxz77Y2ydveuDxv10yv5BkerU8jigj3Joe5q0f9Iw5fzgylomz2pQ8v9H6LlUpzT22lqEPgCQgT4AkIE+AJCBPgD4pcU3DugDHIna33hL6gOaAyU4y+8r6CMd6T6s1f3Y1elVH7XuBHrkrlgu9H4Q6JTUhzYfz81yyko8PDsiJc8P6CMdO9ZOH0OkvVf7bPYK+y6xde5cFnYys+vMrTsar9iPJcbm1deaI7LcX21WtB77tPf7pYx/yXmiffHb8ts0c8Ay5zfUNmtfvPCfGw==
   </data>
  </layer>
  <objectgroup color="#5e3ea4" name="Hero" width="200" height="16">
@@ -32,5 +32,7 @@
   <object gid="14" x="222" y="352"/>
   <object x="87" y="113"/>
  </objectgroup>
- <objectgroup name="bosses" width="200" height="16"/>
+ <objectgroup name="bosses" width="200" height="16">
+  <object gid="29" x="4661" y="391"/>
+ </objectgroup>
 </map>
