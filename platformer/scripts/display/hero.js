@@ -9,11 +9,11 @@ re.c('hero')
   
   padX:6,
   
-  bodyX:110,
-  bodyY:200,
+  bodyX:64,
+  bodyY:135,
 
-  sizeX : 110,
-  sizeY : 200,
+  sizeX : 64,
+  sizeY : 135,
   
   jumpSpeed:480 * re.sys.stepSize,
   jump:false,

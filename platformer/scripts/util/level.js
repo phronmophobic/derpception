@@ -51,10 +51,10 @@ re.c('level')
   },
   
   placeItems:function(){
-    
-    var gid = this.tileset[2].firstgid;
+
+    var gid = this.tileset[1].firstgid;
     var items = this.objectgroup[1].object;
-    
+
     for(var i in items){
       var it = items[i];
       
