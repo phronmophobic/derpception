@@ -45,7 +45,7 @@ re.c('hero')
     //switch back to idle animation if stopped moving
     // if(this.isIdle(0.3)) this.flicker('idle');
 
-    re.screen.pos(this.posX-25*10, re.screen.posY);
+    re.screen.pos(this.posX-25*10, this.posY - 288);
   },
   
   forceJump:function(){
