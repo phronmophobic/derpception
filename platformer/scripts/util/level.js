@@ -13,6 +13,8 @@ re.c('level')
     
     //items requires hero to be defined first
     this.placeItems();
+
+      this.placeBadguys();
     
   },
   
@@ -68,7 +70,37 @@ re.c('level')
       
     }
   },
-  
+  placeBadguys:function(){
+
+      // debugger;
+      // var badguyTileSet = null;
+      // for ( var i = 0; i < this.tileset.length; i ++){
+      //     if ( this.tileset["name"] == "
+      // }
+      // var gid = this.tileset[1].firstgid;
+      var badguys = this.objectgroup[2].object;
+
+      for(var i in badguys){
+          var it = badguys[i];
+          var width,height;
+          for ( var j = 0; j < this.tileset.length; j ++){
+              if ( it.gid + 1 == this.tileset[j].firstgid ){
+                  width = this.tileset[j].tilewidth;
+                  height = this.tileset[j].tileheight;
+                  break;
+              }
+          }
+          
+          // var frame = badguys[i].gid - gid;
+
+          re.e('badguy').attr({
+      posX:it.x,
+              posY:it.y - re.tile.sizeY, //tiled editor adds an extra tile to y
+              
+          });
+          
+      }
+  },  
   placeHero:function(){
     
     var pos = this.objectgroup[0].object;

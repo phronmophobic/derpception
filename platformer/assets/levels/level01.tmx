@@ -6,22 +6,16 @@
  <tileset firstgid="9" name="items" tilewidth="25" tileheight="25">
   <image source="../images/items.png" width="250" height="50"/>
  </tileset>
- <tileset firstgid="29" name="big_baby" tilewidth="334" tileheight="350">
-  <image source="../images/big_baby.png" width="267" height="300"/>
- </tileset>
- <tileset firstgid="30" name="hero" tilewidth="64" tileheight="135">
+ <tileset firstgid="29" name="hero" tilewidth="64" tileheight="135">
   <image source="../images/derp_cut.png" width="64" height="135"/>
  </tileset>
- <tileset firstgid="31" name="monopolyman" tilewidth="980" tileheight="1030">
+ <tileset firstgid="30" name="monopolyman" tilewidth="330" tileheight="350">
   <image source="../images/monopolyman.png" width="333" height="350"/>
  </tileset>
- <tileset firstgid="31" name="monopolyman" tilewidth="330" tileheight="350">
-  <image source="../images/monopolyman.png" width="333" height="350"/>
- </tileset>
- <tileset firstgid="32" name="big_baby" tilewidth="267" tileheight="300">
+ <tileset firstgid="31" name="big_baby" tilewidth="267" tileheight="300">
   <image source="../images/big_baby.png" width="267" height="300"/>
  </tileset>
- <tileset firstgid="33" name="pencil_mouth" tilewidth="272" tileheight="350">
+ <tileset firstgid="32" name="pencil_mouth" tilewidth="272" tileheight="350">
   <image source="../images/pencil_mouth.png" width="272" height="350"/>
  </tileset>
  <layer name="Base" width="500" height="50">
@@ -78,8 +72,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup color="#5e3ea4" name="Hero" width="500" height="50" visible="0">
-  <object gid="30" x="66" y="1146"/>
+ <objectgroup color="#5e3ea4" name="Hero" width="500" height="50">
+  <object gid="29" x="190" y="390"/>
  </objectgroup>
  <objectgroup name="Items" width="500" height="50">
   <object gid="23" x="500" y="1078"/>
@@ -91,7 +85,6 @@
   <object gid="24" x="304" y="953"/>
   <object gid="10" x="402" y="1023"/>
   <object gid="14" x="222" y="1152"/>
-  <object x="87" y="913"/>
   <object gid="25" x="4175" y="1199"/>
   <object gid="25" x="4199" y="1199"/>
   <object gid="25" x="4224" y="1199"/>
@@ -156,8 +149,8 @@
   <object gid="20" x="8536" y="1095"/>
  </objectgroup>
  <objectgroup name="bosses" width="500" height="50">
-  <object gid="31" x="12126" y="1154"/>
-  <object gid="32" x="6646" y="1144"/>
-  <object gid="33" x="8420" y="1115"/>
+  <object gid="30" x="12126" y="1154"/>
+  <object gid="31" x="6646" y="1144"/>
+  <object gid="32" x="8420" y="1115"/>
  </objectgroup>
 </map>
