@@ -11,10 +11,11 @@ re.c('level')
     
     this.placeHero();
     
+      this.placeBadguys();
+
     //items requires hero to be defined first
     this.placeItems();
 
-      this.placeBadguys();
     
   },
   
@@ -93,9 +94,9 @@ re.c('level')
           
           // var frame = badguys[i].gid - gid;
 
-          re.e('badguy').attr({
-      posX:it.x,
-              posY:it.y - re.tile.sizeY, //tiled editor adds an extra tile to y
+          re.e('monopolyman').attr({
+              posX:it.x,
+              posY:it.y - 300, //tiled editor adds an extra tile to y
               
           });
           

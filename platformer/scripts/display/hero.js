@@ -26,7 +26,8 @@ re.c('hero')
     if(this.ground && !this.jump && re.pressed('up')){
       this.forceJump();
     }
-    
+
+
     //walk back and fourth
     if(re.pressed('left')){
         this.velX -= this.speed;
@@ -47,6 +48,14 @@ re.c('hero')
       
       // if(!this.jump) this.flicker('run');
     }
+
+      if ( re.pressed('space') ){
+          var shot = re.e('shot').attr({
+              frame: 3,
+              posX: this.posX,
+              posY: this.posY,
+          });
+      }
     
     //switch back to idle animation if stopped moving
     // if(this.isIdle(0.3)) this.flicker('idle');
@@ -88,4 +97,44 @@ re.c('hero')
 .dispose(function(){
   this.off();
 });
+
+
+
+re.c('shot')
+.requires('items.png tsprite update force body')
+.defines({
+  friX:1.0,
+    count : 0,
+  update:function(){
+      this.velY = -2.5;
+      for ( var i = 0; i < this.badguys.length; i ++){
+          var bad = this.badguys[i];
+	  if(bad.hitBody(this.posX, this.posY, this.sizeX, this.sizeY, 10, 0)){
+              this.hitBadguy(bad);
+	  } 
+      }
+      if ( this.count++ > 30){
+          this.dispose();
+      }
+  },
+    hitBadguy:function(badguy){
+        badguy.dispose();
+    }
+})
+.init(function(){
+  
+  this.on({
+    update:this.update,
+  });
+    this.badguys = re('badguy');
+    this.hero = re('hero')[0];
+    this.velX = this.hero.velX + 20;
+    
+    
+})
+.dispose(function(){
+  this.off();
+});
+
+
 
