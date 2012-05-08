@@ -29,7 +29,10 @@ re.c('hero')
     
     //walk back and fourth
     if(re.pressed('left')){
-      this.velX -= this.speed;
+        this.velX -= this.speed;
+        if ( this.velX < -20 ){
+            this.velX = -20;
+        }
       this.scaleX = -1;
       
       // if(!this.jump) this.flicker('run');
@@ -37,6 +40,9 @@ re.c('hero')
     
     if(re.pressed('right')){
       this.velX += this.speed;
+        if ( this.velX > 20 ){
+            this.velX = 20;
+        }
       this.scaleX = 1;
       
       // if(!this.jump) this.flicker('run');
@@ -45,7 +51,7 @@ re.c('hero')
     //switch back to idle animation if stopped moving
     // if(this.isIdle(0.3)) this.flicker('idle');
 
-    re.screen.pos(this.posX-25*10, this.posY - 288);
+    re.screen.pos(this.posX-25*10, 727);
   },
   
   forceJump:function(){
