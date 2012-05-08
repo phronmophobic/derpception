@@ -14,6 +14,7 @@ re.c('badguy')
 
   sizeX : 267,
   sizeY : 300,
+    hp : 25,
   
   jumpSpeed:480 * re.sys.stepSize,
   jump:false,
@@ -37,6 +38,65 @@ re.c('monopolyman')
   bodyX:333,
   bodyY:350,
   sizeX : 333,
+  sizeY : 350,
+    velX : 10,
+  update:function(){
+      // this.velX = this.hero.velX;
+      // this.velY = this.hero.velY;
+      this.velX *= 8/Math.abs(this.velX);
+      if (Math.random() > 0.95 ){
+          this.velX *= -1;
+      }
+      
+  },
+})
+.init(function(){
+  this.on({
+    update:this.update,
+  });
+
+
+})
+.dispose(function(){
+  this.off();
+});
+
+
+re.c('big_baby')
+.requires('badguy big_baby.png')
+.defines({
+  bodyX:267,
+  bodyY:300,
+  sizeX : 267,
+  sizeY : 300,
+    velX : 10,
+  update:function(){
+      // this.velX = this.hero.velX;
+      // this.velY = this.hero.velY;
+      this.velX *= 8/Math.abs(this.velX);
+      if (Math.random() > 0.95 ){
+          this.velX *= -1;
+      }
+      
+  },
+})
+.init(function(){
+  this.on({
+    update:this.update,
+  });
+
+
+})
+.dispose(function(){
+  this.off();
+});
+
+re.c('pencil_mouth')
+.requires('badguy pencil_mouth.png')
+.defines({
+  bodyX:272,
+  bodyY:350,
+  sizeX : 272,
   sizeY : 350,
     velX : 10,
   update:function(){

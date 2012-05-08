@@ -118,7 +118,11 @@ re.c('shot')
       }
   },
     hitBadguy:function(badguy){
-        badguy.dispose();
+        badguy.hp -= 1;
+        if ( badguy.hp <= 0 ){
+            badguy.dispose();
+        }
+        this.dispose();
     }
 })
 .init(function(){

@@ -83,18 +83,19 @@ re.c('level')
 
       for(var i in badguys){
           var it = badguys[i];
-          var width,height;
+          var width,height,name;
           for ( var j = 0; j < this.tileset.length; j ++){
-              if ( it.gid + 1 == this.tileset[j].firstgid ){
+              if ( it.gid == this.tileset[j].firstgid ){
                   width = this.tileset[j].tilewidth;
                   height = this.tileset[j].tileheight;
+                  name = this.tileset[j].name;
                   break;
               }
           }
           
           // var frame = badguys[i].gid - gid;
 
-          re.e('monopolyman').attr({
+          re.e(name).attr({
               posX:it.x,
               posY:it.y - 300, //tiled editor adds an extra tile to y
               
