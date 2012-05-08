@@ -52,8 +52,8 @@ re.c('hero')
       if ( re.pressed('space') ){
           var shot = re.e('shot').attr({
               frame: 3,
-              posX: this.posX,
-              posY: this.posY,
+              posX: this.posX + 30,
+              posY: this.posY + 20,
           });
       }
     
