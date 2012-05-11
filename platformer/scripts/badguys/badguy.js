@@ -119,3 +119,91 @@ re.c('pencil_mouth')
 .dispose(function(){
   this.off();
 });
+
+re.c('mr_chicken')
+.requires('badguy mr_chicken.png')
+.defines({
+  bodyX:333,
+  bodyY:350,
+  sizeX : 333,
+  sizeY : 350,
+    velX : 10,
+  update:function(){
+      // this.velX = this.hero.velX;
+      // this.velY = this.hero.velY;
+      this.velX *= 8/Math.abs(this.velX);
+      if (Math.random() > 0.95 ){
+          this.velX *= -1;
+      }
+      
+  },
+})
+.init(function(){
+  this.on({
+    update:this.update,
+  });
+
+
+})
+.dispose(function(){
+  this.off();
+});
+
+re.c('pretty_boy')
+.requires('badguy pretty_boy.png')
+.defines({
+  bodyX:333,
+  bodyY:350,
+  sizeX : 333,
+  sizeY : 350,
+    velX : 10,
+  update:function(){
+      // this.velX = this.hero.velX;
+      // this.velY = this.hero.velY;
+      this.velX *= 8/Math.abs(this.velX);
+      if (Math.random() > 0.95 ){
+          this.velX *= -1;
+      }
+      
+  },
+})
+.init(function(){
+  this.on({
+    update:this.update,
+  });
+
+
+})
+.dispose(function(){
+  this.off();
+});
+
+re.c('propeller_head')
+.requires('badguy propeller_head.png')
+.defines({
+  bodyX:333,
+  bodyY:350,
+  sizeX : 333,
+  sizeY : 350,
+    velX : 10,
+  update:function(){
+      // this.velX = this.hero.velX;
+      // this.velY = this.hero.velY;
+      this.velX *= 8/Math.abs(this.velX);
+      if (Math.random() > 0.95 ){
+          this.velX *= -1;
+      }
+      
+  },
+})
+.init(function(){
+  this.on({
+    update:this.update,
+  });
+
+
+})
+.dispose(function(){
+  this.off();
+});
+
