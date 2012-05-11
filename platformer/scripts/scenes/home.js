@@ -2,7 +2,7 @@ re.scene('home')
 .enter(function(){
     re.e('text')
         .attr({
-            text:'Gameover! Press space to play again.',
+            text:'Boo >:D! You can cry or press space',
             textColor:'#000000',
             posX:300,
             posY:300,
