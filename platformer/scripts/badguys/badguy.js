@@ -40,14 +40,13 @@ re.c('monopolyman')
   sizeX : 333,
   sizeY : 350,
     velX : 10,
+    regX : 250,
   update:function(){
-      // this.velX = this.hero.velX;
-      // this.velY = this.hero.velY;
       this.velX *= 8/Math.abs(this.velX);
       if (Math.random() > 0.95 ){
           this.velX *= -1;
       }
-      
+
   },
 })
 .init(function(){
@@ -70,9 +69,8 @@ re.c('big_baby')
   sizeX : 267,
   sizeY : 300,
     velX : 10,
+    regX : 140,
   update:function(){
-      // this.velX = this.hero.velX;
-      // this.velY = this.hero.velY;
       this.velX *= 8/Math.abs(this.velX);
       if (Math.random() > 0.95 ){
           this.velX *= -1;
@@ -99,14 +97,13 @@ re.c('pencil_mouth')
   sizeX : 272,
   sizeY : 350,
     velX : 10,
+    regX : 30,
   update:function(){
-      // this.velX = this.hero.velX;
-      // this.velY = this.hero.velY;
       this.velX *= 8/Math.abs(this.velX);
       if (Math.random() > 0.95 ){
           this.velX *= -1;
-      }
-      
+      } 
+     
   },
 })
 .init(function(){
