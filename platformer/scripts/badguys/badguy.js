@@ -120,10 +120,10 @@ re.c('pencil_mouth')
 re.c('mr_chicken')
 .requires('badguy mr_chicken.png')
 .defines({
-  bodyX:333,
-  bodyY:350,
-  sizeX : 333,
-  sizeY : 350,
+  bodyX:222,
+  bodyY:200,
+  sizeX : 222,
+  sizeY : 200,
     velX : 10,
   update:function(){
       // this.velX = this.hero.velX;
@@ -149,10 +149,10 @@ re.c('mr_chicken')
 re.c('pretty_boy')
 .requires('badguy pretty_boy.png')
 .defines({
-  bodyX:333,
-  bodyY:350,
-  sizeX : 333,
-  sizeY : 350,
+  bodyX:153,
+  bodyY:200,
+  sizeX : 153,
+  sizeY : 200,
     velX : 10,
   update:function(){
       // this.velX = this.hero.velX;
@@ -178,10 +178,10 @@ re.c('pretty_boy')
 re.c('propeller_head')
 .requires('badguy propeller_head.png')
 .defines({
-  bodyX:333,
-  bodyY:350,
-  sizeX : 333,
-  sizeY : 350,
+  bodyX:145,
+  bodyY:200,
+  sizeX : 145,
+  sizeY : 200,
     velX : 10,
   update:function(){
       // this.velX = this.hero.velX;
