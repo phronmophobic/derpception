@@ -7,6 +7,13 @@ re.c('level')
     }
     re.hitmap = re.e('hitmap');
     
+      // re.e('poopy.jpg image draw').attr({
+      //     posX: 0,
+      //     posY: 0,
+      //     screenable: false,
+      //     visible: function(){ return true;},
+      //     scaleX : 2.1,
+      // });
     this.placeTiles();
     
     this.placeHero();

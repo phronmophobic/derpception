@@ -12,8 +12,8 @@ re.scene('load')
   .complete(function(){
     
     //move to home
-    // re.scene('home').enter();
-      re.scene('play').enter('level01');
+    re.scene('start').enter();
+      // re.scene('play').enter('level01');
   })
   .error(function(e){
     
