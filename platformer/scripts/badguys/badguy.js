@@ -28,7 +28,7 @@ re.c('badguy')
   }
 })
 .init(function(){
-
+    this.alive = true;
 })
 
 

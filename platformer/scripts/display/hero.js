@@ -14,6 +14,7 @@ re.c('hero')
 
   sizeX : 64,
   sizeY : 135,
+    // regX : 64,
   
   jumpSpeed:480 * re.sys.stepSize,
   jump:false,
@@ -35,16 +36,18 @@ re.c('hero')
             this.velX = -20;
         }
       this.scaleX = -1;
+        this.regX = 45;
       
       // if(!this.jump) this.flicker('run');
     }
-    
+
     if(re.pressed('right')){
       this.velX += this.speed;
         if ( this.velX > 20 ){
             this.velX = 20;
         }
       this.scaleX = 1;
+        this.regX = 0;
       
       // if(!this.jump) this.flicker('run');
     }
@@ -60,7 +63,7 @@ re.c('hero')
     //switch back to idle animation if stopped moving
     // if(this.isIdle(0.3)) this.flicker('idle');
 
-    re.screen.pos(this.posX-25*10, 727);
+    re.screen.pos(this.posX-25*10, 300);
   },
   
   forceJump:function(){
@@ -119,7 +122,8 @@ re.c('shot')
   },
     hitBadguy:function(badguy){
         badguy.hp -= 1;
-        if ( badguy.hp <= 0 ){
+        if ( badguy.hp <= 0 && badguy.alive){
+            badguy.alive = false;
             badguy.dispose();
         }
         this.dispose();
