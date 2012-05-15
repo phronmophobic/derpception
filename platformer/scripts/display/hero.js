@@ -104,7 +104,7 @@ re.c('hero')
 
 
 re.c('shot')
-.requires('items.png tsprite update force body')
+.requires('items2.png tsprite update force body')
 .defines({
   friX:1.0,
     count : 0,

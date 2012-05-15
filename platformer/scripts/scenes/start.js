@@ -1,6 +1,6 @@
 re.scene('start')
 .enter(function(){
-      this.bg = re.e('start.jpg image draw').attr({
+      this.bg = re.e('start2.jpg image draw').attr({
           posX: 0,
           posY: 0,
           screenable: false,

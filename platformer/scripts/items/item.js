@@ -1,5 +1,5 @@
 re.c('item')
-.requires('tsprite update hit items.png')
+.requires('tsprite update hit items2.png')
 .namespaces({
   
   update:function(t){
